@@ -1,0 +1,129 @@
+start:
+  - play morningBGM:
+  - show room: WITH FADE CONTINUE
+  - var score: 0
+  - wait: 1000
+  - narator says: Di sebuah kota yang canggih dan modern, terdapat tiga remaja sekolah bernama
+  - show cahya: AT LEFT
+  - show ratna: AT CENTER
+  - show sazali: AT RIGHT
+  - narator says: Cahya, Ratna, dan Sazali.
+  - show cahya: AT LEFT
+  - cahya says: Hey namaku cahya
+  - show ratna: AT CENTER
+  - ratna says: Hai nama aku Ratna
+  - show sazali: AT RIGHT
+  - sazali says: Yoo guys Sazali disini
+  - hide cahya:
+  - hide ratna:
+  - hide sazali:
+  - narator says: Mereka adalah sahabat yang tak terpisahkan, menjalani kehidupan sehari-hari dengan canda dan tawa.
+  - narator says: Ini merupakan kisah mereka bertiga...
+  - wait: 3000
+  - narator says: Suatu sore yang cerah, Ratna menemukan sesuatu yang tidak biasa di perpustakaan sekolahnya.
+  - show library: WITH FADE CONTINUE
+  - show ratna: 
+  - ratna says: Kira kira ada buku yang bagus gk yah buat aku baca hari ini?
+  - ratna says: Wah apa ini?
+  - hide ratna:
+  - show book:
+  - wait: 3000
+  - hide book:
+  - show ratna: 
+  - ratna says: Wah apa ini keliatannya menarik bawa pulang ahh
+  - narator says: Ratna memutuskan untuk membawa buku itu ke rumah Cahya.
+  - hide ratna:
+  - wait: 2000
+  - show cahya-room:
+  - show ratna:
+  - ratna says: Cahya!, Sazali! Kalian harus lihat ini!
+  - hide ratna:
+  - show book:
+  - wait: 3000
+  - hide book:
+  - show cahya: AT LEFT
+  - cahya says: Apa itu, Ratna?
+  - show sazali: AT RIGHT
+  - sazali says: Iya, apaan sih? kelihatannya seru!
+  - show ratna:
+  - ratna says: Ini buku yang aku temukan di sekolah
+  - narator says: Saat mereka berkumpul di ruang tamu, Retna membuka buku itu dan membaca halaman pertama buku itu.
+  - show ratna:
+  - ratna says: '"Setiap pilihan yang kamu buat memiliki sebab akibat, jika kamu ragu jangan sekali-kali buka halaman berikutnya."'
+  - show cahya: 
+  - cahya says: ...
+  - ratna says: '"Saat kamu membuka halaman berikutnya, tidak ada jalan kembali."'
+  - narator says: Cahya, dan Sazali menahan tawa sembari menahan ludah,
+  - show sazali: 
+  - sazali says: Hahahha siapa yang membuat buku ini
+  - show cahya: 
+  - cahya says: Ini pasti lelucon. Mari kita lihat halaman berikutnya
+  - show ratna:
+  - ratna says: '"Kalian harus menjawab 1 soal matriks yang muncul setiap 2 hari dan harus dikerjakan dalam waktu dua menit, dan total soal ada 5..."'
+  - ratna says: '"Jika tidak menjawab, atau jika jawaban kalian salah, seseorang yang berharga akan mati."'
+  - narator says: Mereka terdiam sejenak, tetapi...
+  - show sazali:
+  - sazali says: Pasti ini hanya cerita fiksi. Ayo lanjut!
+  - narator says: Kemudian saat mereka membuka halaman berikutnya, dikertas tua itu muncul sebuah soal matriks.
+  - show cahya:
+  - cahya says: Hadehh, matematika lagi. udah ah aku mau ngerjain pr aja
+  - hide cahya:
+  - hide sazali:
+  - narator says: Ratna menggenggam buku itu lebih erat.
+  - show ratna:
+  - ratna says: Tapi... bagaimana jika ini benar Kita harus berhati-hati
+  - hide ratna:
+  - show cahya:
+  - cahya says: Ayolah kau sudah besar, jangan terlalu percaya takhayul
+  - hide cahya:
+  - choice:
+    - narator says: Bantu cahya untuk menyelesaikan PR nya
+    - "Aldo-kun aku datang!":
+      - show ratna: 
+      - var score: "{score} + 10"
+      - wait: 100
+      - ratna says: Yap seperti ini...
+      - hide ratna:
+    - "Gk mau!":
+      - show ratna:
+      - var score: "{score} + 0"
+      - wait: 100
+      - ratna says: Yap seperti ini...
+      - hide ratna:
+  - if ({score} >= 10):
+    - show cahya:
+    - cahya says: "Sepertinya sudah semuanya, kerja bagus {score}"
+    - hide cahya:
+  - else:
+    - show cahya:
+    - cahya says: "Sepertinya sudah semuanya, tapi aku kurang yakin sih {score}"
+    - hide cahya:
+  - show ratna:
+  - scene: endGame
+
+endGame:
+  - ratna says normal: Prologue over!
+  - hide ALL:
+  - play rollingCredits:
+  - effect ROLLINGCREDITS:
+    endGame: true
+    text:
+      - Built on
+      - RenJS.V2 and AnimeJS
+      - " "
+      - " "
+      - Developer team
+      - " "
+      - Givaldi
+      - Gilbran
+      - Nabil
+      - Aldo
+      - Savaira
+      - Amelia
+      - " "
+      - Thank for playing
+      - " "
+      - Prologue is over
+      - good job
+      - " "
+      - Escape From the Matrix

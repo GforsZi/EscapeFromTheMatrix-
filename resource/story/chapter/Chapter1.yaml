@@ -1,0 +1,97 @@
+start:
+  - play sadBGM:
+  - show room: WITH FADE CONTINUE
+  - var score: 0
+  - narator says: Keesokan harinya, Retna terbangun dan merasakan ketegangan di udara.
+  - show ratna: CONTINUE
+  - show ratna-room:
+  - ratna says: Ada apa dengan hari ini? Aku merasakan hawa yang tidak enak.
+  - wait: 1000
+  - ratna says: Duh jam berapa ini, aku harus bersiap kesekolah!
+  - narator says: Lalu Ratna berangkat bersekolah tanpa tau apa yang akan terjadi.
+  - hide ratna:
+  - show school:
+  - wait: 2000
+  - show ratna:
+  - ratna says: Apa cuma perasaanku saja ya, hari ini agak dingin.
+  - hide ratna:
+  - show ratna: AT RIGHT
+  - show ayya: AT LEFT
+  - wait: 1000
+  - show ayya: AT LEFT
+  - ayya says: Eh, selamat pagi kak Ratna
+  - show ratna: AT RIGHT
+  - ratna says: Pagi juga Ayya
+  - hide ratna: CONTINUE
+  - show ayya: AT CENTER
+  - ayya says: ...
+  - show ayya: AT LEFT CONTINUE
+  - show ratna: AT RIGHT 
+  - ratna says: Kamu keliatan sedih, kenapa?
+  - show ayya: AT LEFT
+  - ayya says: Kakak tau gak kak Cahya kenapa?
+  - show ratna: AT RIGHT 
+  - ratna says: Ohh iya, kemana si Cahya sama si Sazali dari tadi gak keliatan...
+  - hide ratna: CONTINUE
+  - show ayya: AT CENTER
+  - ayya says: Kak Cahya gak masuk
+  - ayya says: Ibu kak Cahya baru saja tiada, kar... 
+  - hide ayya: CONTINUE
+  - show ratna:
+  - ratna says: APA KENAPA ITU BISA TERJADI !?
+  - hide ratna: CONTINUE
+  - show ayya:
+  - ayya says: Aku juga gak tau
+  - ayya says: Aku hanya denger ibunya tiada karna sakit...
+  - show ayya: AT LEFT CONTINUE
+  - show ratna: AT RIGHT
+  - ratna says: Jangan Jangan
+  - hide ratna:
+  - show ayya: AT LEFT
+  - ayya says: Kak Ratna mau kemana?
+  - hide ALL:
+  - narator says: Tanpa pikir panjang Ratna meninggalkan sekolah.
+  - narator says: Hatinya berdegup kencang, dia berlari ke rumah Cahya.
+  - narator says: Setibanya di sana, suasana penuh kesedihan.
+  - show cahya-house:
+  - show ratna:
+  - ratna says: PERMISI! CAHYA!
+  - wait: 3000
+  - ratna says: Sepertinya tidak ada orang
+  - ratna says: Aku harus mencarinya!
+  - hide ALL:
+  - narator says: Ratna mengelilingi kota untuk mencari cahya, sampai akhirnya...
+  - show park-day: CONTINUE
+  - show ratna: AT RIGHT
+  - ratna says: Cahya!
+  - show cahya: AT LEFT CONTINUE
+  - show sazali: AT CENTER
+  - cahya says: ...
+  - scene: endGame
+
+endGame:
+  - ratna says normal: Prologue over!
+  - hide ALL:
+  - play rollingCredits:
+  - effect ROLLINGCREDITS:
+    endGame: true
+    text:
+      - Built on
+      - RenJS.V2 and AnimeJS
+      - " "
+      - " "
+      - Developer team
+      - " "
+      - Givaldi
+      - Gilbran
+      - Nabil
+      - Aldo
+      - Savaira
+      - Amelia
+      - " "
+      - Thank for playing
+      - " "
+      - Prologue is over
+      - good job
+      - " "
+      - Escape From the Matrix

@@ -1,0 +1,55 @@
+
+backgrounds:
+  room: ../../resource/img/city.jpg
+  library: ../../resource/img/library.jpg
+  cahya-house: ../../resource/img/cahya-house.jpg
+  cahya-room: ../../resource/img/cahya-room.jpg
+  ratna-room: ../../resource/img/ratna-room.jpg
+  school: ../../resource/img/school.jpg
+  park-day: ../../resource/img/park-day.jpg
+  park-night: ../../resource/img/park-night.jpg
+
+characters:
+  narator:
+    displayName: Narator
+    speechColour: "#004456"
+  ratna:
+    displayName: Retna
+    speechColour: "#b737b0"
+    looks:
+      normal: ../../resource/img/girl.png
+  sazali:
+    displayName: Sazali
+    speechColour: "#164428"
+    looks:
+      normal: ../../resource/img/boy-2.png
+  cahya:
+    displayName: Cahya
+    speechColour: "#311644"
+    looks:
+      normal: ../../resource/img/boy-1.png
+  ayya:
+    displayName: Ayya
+    speechColour: "#1c8898"
+    looks:
+      normal: ../../resource/img/female-student.png
+
+cgs:
+  phone1: ../../resource/assets/objects/phone1.png
+  phone2: ../../resource/assets/objects/phone2.png
+  book: ../../resource/img/book.png
+
+music:
+  rollingCredits: ../../resource/assets/audio/outro.mp3
+  morningBGM: ../../resource/assets/audio/Evan_Schaeffer_-_03_-_Glow.mp3
+  sadBGM: ../../resource/assets/audio/sad_backsound.mp3
+sfx:
+  ringtoneSFX: ../../resource/assets/audio/nokia6210-24-elise.mp3
+  ringtoneSFX2: ../../resource/assets/audio/alcatel-top_secret.mp3
+
+extra:
+  spritesheets:
+    rain: ../../resource/assets/ambient/rain.png 17 17
+    sakura: ../../resource/assets/ambient/sakura-petals.png 17 26
+    snowflakes: ../../resource/assets/ambient/snowflakes.png 17 17
+    snowflakes_large: ../../resource/assets/ambient/snowflakes_large.png 64 64

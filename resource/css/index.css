@@ -1,0 +1,64 @@
+:root {
+  --warna-hitam: rgb(29, 29, 29);
+  --warna-orange-0: #94b9ff;
+  --warna-orange-1: rgb(186, 91, 0);
+  --warna-orange-2: #cdffd8;
+}
+
+.stagger-visualizer div {
+  border: 1px solid var(--warna-orange-2);
+  width: 50px;
+  height: 250px;
+}
+
+.logo {
+  margin-top: 60px;
+  z-index: 3;
+  transition: 0.4s;
+  text-shadow: 0px 0px 30px var(--warna-orange-2);
+  color: var(--warna-orange-0);
+  font-size: 10vw;
+  margin: 0;
+  text-align: center;
+}
+
+.logo span {
+  margin: 0;
+  font-size: 4vw;
+  color: var(--warna-orange-0);
+  z-index: 3;
+}
+.btn-on {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transition: 0.4s;
+  left: 0;
+  margin-bottom: -200px;
+  text-shadow: 0px 0px 10px var(--warna-orange-2);
+  text-decoration: none;
+  color: var(--warna-orange-0);
+  font-size: 4vw;
+  z-index: 1;
+}
+
+.btn-back {
+  transition: 1s;
+  margin-bottom: 150px;
+}
+
+.visibility-h-only {
+  visibility: hidden;
+}
+
+.visibility-h {
+  transform: translateY(1020px);
+  z-index: 0;
+}
+
+.visibility-v {
+  transform: translateY(-1020px);
+  z-index: 3;
+}

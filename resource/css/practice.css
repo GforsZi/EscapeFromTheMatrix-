@@ -1,0 +1,29 @@
+:root {
+  --warna-hitam: rgb(29, 29, 29);
+  --warna-orange-0: #ebcba9;
+  --warna-orange-1: rgb(186, 91, 0);
+  --warna-orange-2: #e36f00;
+}
+
+body {
+  background-image: linear-gradient(var(--warna-hitam), var(--warna-orange-1));
+  min-height: 100vh;
+}
+
+.blocks {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.blue {
+  background-color: lightblue;
+}
+.green {
+  background-color: lightgreen;
+}
+.yellow {
+  background-color: yellow;
+}

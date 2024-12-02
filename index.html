@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape From the Matrix</title>
+    <link
+      rel="stylesheet"
+      href="./resource/css/index.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="./resource/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body
+    class="position-relative d-flex"
+    style="
+      background-image: linear-gradient(#94b9ff, #cdffd8);
+      min-height: 100vh;
+    "
+  >
+    <div id="body-1">
+      <main
+        class="position-absolute top-0 end-0 start-0 justify-content-center"
+      >
+        <h1 class="logo">
+          <span>Escape From the</span><br />
+          Matrix
+        </h1>
+        <a class="btn-on" style="cursor: pointer">User Login!</a>
+      </main>
+      <section>
+        <div
+          class="stagger-visualizer vw-100 vh-100 d-flex top-0 bottom-0 end-0 start-0 align-items-center justify-content-center z-0 position-fixed"
+        ></div>
+      </section>
+    </div>
+    <div
+      id="body-2"
+      class="vw-100 vh-100 position-fixed visibility-h-only top-0 end-0 start-0 bottom-0"
+      style="background-image: linear-gradient(#94b9ff, #cdffd8); z-index: 2"
+    >
+      <h1 class="logo">
+        <span>Escape From the</span><br />
+        Matrix
+      </h1>
+      <div
+        style="padding-top: 7vh"
+        class="container d-flex justify-content-center"
+      >
+        <div class="d-block">
+          <button
+            id="s-btn"
+            class="btn m-2 d-block btn-outline-light"
+            style="width: 200px"
+          >
+            <h3>Story</h3>
+          </button>
+          <button
+            id="q-btn"
+            class="btn m-2 d-block btn-outline-light"
+            style="width: 200px"
+          >
+            <h3>Quest</h3>
+          </button>
+          <a
+            id="btn-logout"
+            class="btn m-2 d-block btn-outline-light"
+            style="width: 200px"
+            ><h3>logout</h3></a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      id="body-s"
+      class="vw-100 vh-100 position-fixed justify-content-center align-items-center d-flex top-0 end-0 start-0 bottom-0"
+    >
+      <div
+        class="w-50 h-50 d-flex align-items-center justify-content-center visibility-h border-1 border-black"
+        style="
+          background-image: linear-gradient(
+            rgba(148, 185, 255, 0.4),
+            rgba(205, 255, 216, 0.4)
+          );
+          z-index: 2;
+        "
+      >
+        <button
+          class="btn btn-danger position-absolute end-0 top-0 m-4"
+          id="close-s"
+        >
+          X
+        </button>
+        <div class="row d-flex mx-auto container">
+          <div style="min-width: 100px" class="col">
+            <a
+              class="btn btn-outline-primary w-100 m-2"
+              style="cursor: pointer"
+              href="./page/story/prologue.html"
+            >
+              Prologue
+            </a>
+          </div>
+          <div style="min-width: 100px" class="col">
+            <a
+              class="btn btn-outline-primary w-100 m-2"
+              style="cursor: pointer"
+              href="./page/story/chapter1.html"
+            >
+              chapter 1
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="body-q"
+      class="vw-100 vh-100 position-fixed justify-content-center align-items-center d-flex top-0 end-0 start-0 bottom-0"
+    >
+      <div
+        class="w-50 h-50 d-flex align-items-center justify-content-center visibility-h border-1 border-black"
+        style="
+          background-image: linear-gradient(
+            rgba(148, 185, 255, 0.4),
+            rgba(205, 255, 216, 0.4)
+          );
+          z-index: 2;
+        "
+      >
+        <button
+          class="btn btn-danger position-absolute end-0 top-0 m-4"
+          id="close-q"
+        >
+          X
+        </button>
+        <div class="row d-flex mx-auto container">
+          <div style="min-width: 100px" class="col">
+            <a
+              class="btn btn-outline-primary w-100 m-2"
+              style="cursor: pointer"
+              href=""
+            >
+              Quest 1
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="./resource/anime-master/lib/anime.min.js"
+    type="text/javascript"
+    charset="utf-8"
+  ></script>
+  <script
+    src="./resource/bootstrap-5.3.3-dist/js/bootstrap.min.js"
+    type="text/javascript"
+    charset="utf-8"
+  ></script>
+  <script src="./resource/js/index.js"></script>
+</html>
