@@ -76,7 +76,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     ];
 
-    // Check answer and display result
     if (checkAnswer(userMatrix, correctMatrix)) {
       resultMessage.innerHTML =
         "<h3 class='text-success'>Correct!</h3><a href='../../index.html' class='btn btn-success'>Selesain</a>";

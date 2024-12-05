@@ -1,0 +1,31 @@
+.box {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+button {
+    margin: 0 10px;
+    width: 80px;
+    height: 40px;
+}
+
+.pointer {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid black;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    transform: translateX(0);
+    transition: transform 0.3s;
+}
+
+#message {
+    font-size: 20px;
+    font-weight: bold;
+}

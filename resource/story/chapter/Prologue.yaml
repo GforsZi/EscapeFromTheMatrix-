@@ -19,11 +19,12 @@ start:
   - hide sazali:
   - narator says: Mereka adalah sahabat yang tak terpisahkan, menjalani kehidupan sehari-hari dengan canda dan tawa.
   - narator says: Ini merupakan kisah mereka bertiga...
+  - show school:
   - wait: 3000
   - narator says: Suatu sore yang cerah, Ratna menemukan sesuatu yang tidak biasa di perpustakaan sekolahnya.
   - show library: WITH FADE CONTINUE
   - show ratna: 
-  - ratna says: Kira kira ada buku yang bagus gk yah buat aku baca hari ini?
+  - ratna says: Kira kira ada buku yang bagus gak yah buat aku baca hari ini?
   - ratna says: Wah apa ini?
   - hide ratna:
   - show book:
@@ -52,6 +53,7 @@ start:
   - ratna says: '"Setiap pilihan yang kamu buat memiliki sebab akibat, jika kamu ragu jangan sekali-kali buka halaman berikutnya."'
   - show cahya: 
   - cahya says: ...
+  - show ratna:
   - ratna says: '"Saat kamu membuka halaman berikutnya, tidak ada jalan kembali."'
   - narator says: Cahya, dan Sazali menahan tawa sembari menahan ludah,
   - show sazali: 
