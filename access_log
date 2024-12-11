@@ -38,3 +38,6 @@
 127.0.0.1 - - [21/Nov/2024:08:08:34 +0700] "GET /resource/bootstrap-5.3.3-dist/js/bootstrap.min.js HTTP/1.1" 200 60635
 127.0.0.1 - - [21/Nov/2024:08:08:34 +0700] "GET /resource/anime-master/lib/anime.min.js HTTP/1.1" 200 17384
 127.0.0.1 - - [21/Nov/2024:08:08:35 +0700] "GET /resource/assets/audio/pagiku_cerahku.mp3 HTTP/1.1" 206 364968
+::1 - - [06/Dec/2024:14:45:14 +0700] "GET /practice.html HTTP/1.1" 404 196
+::1 - - [06/Dec/2024:14:45:14 +0700] "GET /practice.html HTTP/1.1" 404 196
+::1 - - [06/Dec/2024:14:45:15 +0700] "GET /favicon.ico HTTP/1.1" 404 196

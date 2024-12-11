@@ -54,11 +54,11 @@
 }
 
 .visibility-h {
-  transform: translateY(1020px);
+  transform: translateY(100vh);
   z-index: 0;
 }
 
 .visibility-v {
-  transform: translateY(-1020px);
+  transform: translateY(-100vh);
   z-index: 3;
 }
